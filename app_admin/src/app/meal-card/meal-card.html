@@ -1,0 +1,8 @@
+<div class="card" style="width: 16rem;">
+    <h4 class="card-header" style="text-align: center;">{{ meal.name }}</h4>
+        <img src="assets/images/{{ meal.image }}" alt="meal thumbnail" class="card-img-top">
+        <div class="card-body">
+        <p class="card-subtitle mt-3 mb-3 text-muted" style="text-align: center;">{{ meal.price }}</p>
+        <p class="card-text" [innerHTML]="meal.description"></p>
+    </div>
+</div>

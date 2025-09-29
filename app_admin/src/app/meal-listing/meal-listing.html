@@ -1,0 +1,15 @@
+<div class="row" style="padding-block: 2rem;">
+    <div *ngFor="let meal of breakfast" class="col-md-4">
+        <app-meal-card [meal]="meal" class="card-deck mt-2"></app-meal-card>
+    </div>
+</div>
+<div class="row" style="padding-block: 2rem;">
+    <div *ngFor="let meal of lunch" class="col-md-4">
+        <app-meal-card [meal]="meal" class="card-deck mt-2"></app-meal-card>
+    </div>
+</div>
+<div class="row" style="padding-block: 2rem;">
+    <div *ngFor="let meal of dinner" class="col-md-4">
+        <app-meal-card [meal]="meal" class="card-deck mt-2"></app-meal-card>
+    </div>
+</div>
