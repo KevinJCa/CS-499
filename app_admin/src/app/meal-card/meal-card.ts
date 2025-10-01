@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { Meal } from '../models/meal';
 
 @Component({
   selector: 'app-meal-card',
@@ -13,9 +15,15 @@ export class MealCard implements OnInit {
   
   @Input('meal') meal: any;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     
+  }
+
+  public editMeal(meal: Meal) {
+    localStorage.removeItem('mealCode');
+    localStorage.setItem('mealCode', meal.code);
+    this.router.navigate(['edit-meal']);
   }
 }

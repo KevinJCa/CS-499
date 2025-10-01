@@ -5,4 +5,7 @@
         <p class="card-subtitle mt-3 mb-3 text-muted" style="text-align: center;">{{ meal.price }}</p>
         <p class="card-text" [innerHTML]="meal.description"></p>
     </div>
+    <div>
+        <button (click)="editMeal(meal)" class="btn btn-info">Edit Meal</button>
+    </div>
 </div>

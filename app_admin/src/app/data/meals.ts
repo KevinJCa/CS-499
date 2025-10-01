@@ -1,5 +1,5 @@
 export const breakfast = [
-                {
+        {
             "code" : "CHPR3205",
             "name" : "ChinesePorridge",
             "image" : "chinese-porridge.jpg",
@@ -20,7 +20,7 @@ export const breakfast = [
         }
 ]
 export const lunch = [
-    {
+        {
             "code" : "PONO1249",
             "name" : "Pork Noodles",
             "image" : "pork-noodles.jpg",
@@ -41,7 +41,7 @@ export const lunch = [
         }
 ]
 export const dinner = [
-            {
+        {
             "code" : "CRWO2394",
             "name" : "Crab Wontons",
             "image" : "wontons.jpg",
