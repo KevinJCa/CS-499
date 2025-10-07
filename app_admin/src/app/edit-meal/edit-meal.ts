@@ -26,6 +26,7 @@ export class EditMeal {
   ) {}
 
   ngOnInit() : void {
+    
     // Retrieve stashed meal ID
     let mealCode = localStorage.getItem("mealCode");
     if (!mealCode) {
@@ -34,6 +35,7 @@ export class EditMeal {
       return;
     }
 
+    // Prints current method accessed to the console with associated meal
     console.log('EditMeal::ngOnInit');
     console.log('mealcode:' + mealCode);
   
@@ -44,8 +46,9 @@ export class EditMeal {
       image: ['', Validators.required],
       description: ['', Validators.required],
       price: ['', Validators.required],
-    })
+    });
 
+    // Retrieves meal using its unique code
     this.mealData.getMeal (mealCode)
       .subscribe({
         next: (value:any) => {
@@ -64,9 +67,10 @@ export class EditMeal {
       error: (error:any) => {
         console.log('Error ' + error);
       }
-    })
+    });
   }
 
+  // Updates the selected meal using the inputted edit-form values
   public onSubmit()
   {
     this.submitted = true;
@@ -82,7 +86,7 @@ export class EditMeal {
         error: (error: any) => {
           console.log('Error: ' + error);
         }
-      })
+      });
     }
   }
 

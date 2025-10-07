@@ -1,11 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { MealListing } from './meal-listing/meal-listing';
+import { Navbar } from './navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, MealListing, RouterModule],
+  standalone: true,
+  imports: [CommonModule, Navbar, RouterModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

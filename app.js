@@ -11,9 +11,18 @@ var aboutRouter = require('./app_server/routes/about'); // Wires up the menu con
 var contactRouter = require('./app_server/routes/contact'); // Wires up the menu controller to connect it to the route for the /contact page.
 var apiRouter = require('./app_api/routes/index'); // Defines variable for API routes
 var handlebars = require('hbs'); // Defines handlebars variable
+var passport = require('passport'); // Defines passport variable
 
 // Brings in the database
 require('./app_api/models/db');
+
+// Pulls in the contents of our .env file
+// config() reads the .env file, allowing us to bring
+// the variables defined in the file into our memory space.
+require('dotenv').config();
+
+// Wires in our authentication module
+require('./app_api/config/passport')
 
 var app = express();
 
@@ -30,13 +39,23 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(passport.initialize());
 
 // Enable CORS (Cross Origin Resource Sharing)
 app.use('/api', (req, res, next) => {
   res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
+});
+
+// Catch unauthorized error and create 401
+app.use((err, req, res, next) => {
+  if(err.name === 'UnauthorizedError') {
+    res
+    .status(401)
+    .json({"message": err.name + ": " + err.message});
+  }
 });
 
 app.use('/', indexRouter);

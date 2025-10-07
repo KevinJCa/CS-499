@@ -4,6 +4,7 @@ import { MealCard } from '../meal-card/meal-card';
 import { Meal } from '../models/meal';
 import { MealData } from '../services/meal-data';
 import { Router } from '@angular/router';
+import { Authentication } from '../services/authentication';
 
 @Component({
   selector: 'app-meal-listing',
@@ -21,12 +22,18 @@ export class MealListing implements OnInit {
   meals!: Meal[];
   message: string = '';
 
-  constructor(private mealData: MealData, private router: Router) {
+  constructor(private mealData: MealData, private router: Router, private Authentication: Authentication) {
     console.log('meal-listing constructor');
   }
   
+  // Navigates the user to the add-meal form
   public addMeal(): void {
     this.router.navigate(['add-meal'])
+  }
+
+  // Verifies if the user is logged in to ensure the user has the right to add meals
+  public isLoggedIn() {
+    return this.Authentication.isLoggedIn();
   }
 
   // Method that will call the getMeals() method in MealData

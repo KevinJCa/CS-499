@@ -2,9 +2,13 @@ import { Routes } from '@angular/router';
 import { AddMeal } from './add-meal/add-meal';
 import { MealListing } from './meal-listing/meal-listing';
 import { EditMeal } from './edit-meal/edit-meal';
+import { RemoveMeal } from './remove-meal/remove-meal';
+import { Login } from './login/login';
 
 export const routes: Routes = [
     { path: 'add-meal', component: AddMeal},
     { path: 'edit-meal', component: EditMeal },
+    { path: 'remove-meal', component: RemoveMeal},
+    { path: 'login', component: Login},
     { path: '', component: MealListing, pathMatch: 'full'}
 ];

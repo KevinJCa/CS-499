@@ -22,6 +22,7 @@ export class AddMeal {
     private mealService: MealData
   ) { }
 
+  // Builds a form using certain values that are required by the user
   ngOnInit() {
     this.addForm = this.formBuilder.group({
       _id: [],
@@ -33,6 +34,7 @@ export class AddMeal {
     })
   }
 
+  // Adds a new meal using the inputted values by the user
   public onSubmit() {
     this.submitted = true;
     if(this.addForm.valid){

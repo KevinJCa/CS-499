@@ -100,10 +100,30 @@ const mealsUpdateMeal = async(req, res) => {
         // console.log(q)
 };
 
+// DELETE: /meals/:mealCode - Removes a Meal
+// Regardless of outcome, response must include HTML status code
+// and JSON message to the requesting client
+const mealsRemoveMeal = async(req, res) => {
+
+    // No filter, return all records;
+    const q = await Model.deleteOne({'code' : req.params.mealCode }).exec() // Delete a single meal using its code
+
+    // Uncomment to show results of query on console
+    // console.log(q);
+
+    // If database returns no data
+    if(!q) { 
+        return res.status(404).json(err);
+    } else {
+        return res.status(200).json(q);
+    }
+}
+
 module.exports = {
     mealsList,
     mealsFindByCode,
     mealsAddMeal,
-    mealsUpdateMeal
+    mealsUpdateMeal,
+    mealsRemoveMeal
 };
 
