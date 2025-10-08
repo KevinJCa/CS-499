@@ -1,4 +1,4 @@
-import { inject, Inject, Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { BROWSER_STORAGE } from '../storage';
 import { User } from '../models/user';
 import { AuthResponse } from '../models/auth-response';
@@ -64,11 +64,9 @@ export class Authentication {
       return { email, name } as User;
     }
   
-    // Login method that leverages the login method in tripData
+    // Login method that leverages the login method in MealData
     // Because that method returns an observable, we subscribe to the
     // result and only process when the Observable condition is satisfied
-    // Uncomment the two console.log messages for additional debugging
-    // information.
     public login(user: User, passwd: string) : void {
       this.MealData.login(user, passwd)
         .subscribe({
@@ -86,13 +84,9 @@ export class Authentication {
         })
     }
 
-    // Register method that leverages the register method in tripData
+    // Register method that leverages the register method in MealData
     // Because that method returns an observable, we subscribe to the
     // result and only process when the Observable condition is satisfied
-    // Uncomment the two console.log messages for additional debugging
-    // information. Please Note: This method is nearly identical to the
-    // login method because the behavior of the API logs a new user in
-    // immediately upon registration
     public register(user: User, passwd: string) : void {
       this.MealData.register(user, passwd)
         .subscribe({
