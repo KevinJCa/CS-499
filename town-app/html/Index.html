@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- The head tag contains all the meta elements containing metadata about the page, along with links to other assets such as the style
+    sheet css, also includes the main title of the page. -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Town is dedicated to bring quality, style, and the wish for good fortune to all of their guests. Providing a high end experience through Chinese cuisine.">        
+        <meta name="keywords" content="Town, Chinese cuisine, mission statement, food, fortune, quality, style">
+        <meta name="author" content="Kevin Caballero">       
+        <meta name="viewport" content="width = device-width, initial-scale=1">        
+        <link rel="stylesheet" href="../css/stylesheet.css"> 
+        <title>TOWN</title>
+        <!-- This style section contains the design elements used for the inital dishes showcased and paragraph formatting. -->    
+        <style>
+        /*Home dish showcase layout*/
+        .dishshow {
+            list-style-type: none;
+            overflow: hidden;
+        }
+        li .dishes {
+            display: block;
+            float: left;
+        }
+        .dish{
+            margin: 35px;
+            width: 20%;
+            height: 20%;
+            border: 4px solid #be1e2d50;
+            border-radius: 10px;
+        }
+        .galleryheader {
+            color:#d4a18d;
+            font-size: 48px;
+            font-family: 'majesti_bannerbold';
+            text-align: center;
+            margin: 0;
+        }
+        /*Mission statement format*/
+        .missioncontainer {
+            display: block;
+            padding: 25px;
+            margin: auto;
+        }
+        .missionheader {
+            font-family: 'majesti_bannerbold';
+            font-size: 52px;
+            text-align: center;
+            color: #d4a18d;
+        }
+        .missionstate {
+            font-family: 'majesti_bannermedium';
+            font-size: 36px;
+            text-align: center;
+            color: white;
+        }
+        /*Home image*/
+        .homeimg {
+            display: block;
+            width: 95%;
+            height: auto;
+            margin: 24px auto;
+            border: 4px solid #be1e2d50;
+            border-radius: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <!-- An unordered list that contains links to other pages on the navigation menu. -->
+            <ul class="navlinks">                                
+                <li><a class="home" href="contact.html">Contact</a></li>
+                <li><a class="home" href="about.html">About</a></li>
+                <li><a class="home" href="menu.html">Menu</a></li>
+                <li><a class="home" href="Index.html">Home</a></li>
+                <li><a href="Index.html"><Img class="navlogo" src="../images/Town-logoBW.png" alt="Town logo"></a></li>           
+            </ul>
+        </nav>
+        <div>
+            <!-- Dominant image: Image of the restaurant. -->
+            <Img class="homeimg" src="../images/indoor-restaurant.jpg" alt="Indoor restaurant image">
+        </div>
+        <div class="missioncontainer">        
+            <!-- Header : Contains the heading for the mission statement of the company. -->
+            <h1 class="missionheader">Mission Statement</h1>
+            <!-- This paragraph contains the mission statement. -->
+            <p class="missionstate">To bring quality, style, and the wish for good fortune
+            to all of our guests. We provide a high-end experience
+            through Chinese cuisine.</p>
+        </div>
+        <div>
+            <h3 class="galleryheader">Food Gallery</h3>
+            <!-- An unordered list that consists of the dishes to be showcased within the home page. -->
+            <ul class="dishshow">
+                <li class="dishes">
+                    <Img class="dish" src="../images/fried-pork.jpg" alt="Fried Pork Dish">
+                    <Img class="dish" src="../images/pork-noodles.jpg" alt="Pork Noodles Dish">
+                    <Img class="dish" src="../images/prawn-noodles.jpg" alt="Prawn Noodles Dish">
+                    <Img class="dish" src="../images/crayfish-stirfry.jpg" alt="Cray Fish Dish">
+                </li>
+            </ul>
+        </div>
+        <!-- Contains the footer info. for each page listing the location, hours, email, as well as phone number of the restaurant. -->        
+        <footer>
+            <div class="footerrow">
+                <div class="footercolumn">
+                    <img class="footerlogo" src="../images/Town-logo.png" alt="Town logo">
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Location</h3>
+                    <p>103 Mulberry St, New York, NY 10013</p> 
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Hours</h3>
+                    <p>Monday-Friday : 9:00am - 11:00pm</p>
+                    <p>Saturday : 10:00am - 9:00pm</p>
+                    <p>Sunday : 11:00am - 8:00pm</p>
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Email</h3>
+                    <p>TownCCuisine@gmail.com</p>
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Phone</h3>
+                    <p>+1 646-000-0000</p>
+                </div>
+            </div>                
+            <div style="color:white; text-align: center">
+                <small>&copy; 2023, Town | All Rights Reserved </small>
+            </div>
+        </footer>                
+    </body>
+</html>

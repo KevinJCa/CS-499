@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- The head tag contains all the meta elements containing metadata about the page, along with links to other assets such as the style
+        sheet css, also includes the main title of the page. -->
+        <meta charset="utf-8">
+        <meta name="description" content="Lists available chinese dishes offered at the restaurant.">        
+        <meta name="keywords" content="Town, menu, Chinese cuisine, food, quality, variety, breakfast, lunch, dinner">
+        <meta name="author" content="Kevin Caballero">       
+        <meta name="viewport" content="width = device-width, initial-scale=1">        
+        <link rel="stylesheet" href="../css/stylesheet.css"> 
+        <title>Menu</title>
+        <style>
+            /* Main image for menu */
+            .menuimage {
+                display: block;
+                width: 70%;
+                height: auto;
+                margin: 24px auto;
+                border: 4px solid #be1e2d50;
+                border-radius: 10px;
+            }
+            /* Menu heading format */
+            .menuhead {
+                display: block; 
+                background-color: rgba(0,0,0, 0.5);
+                color: #d4a18d;
+                font-family: 'majesti_bannerheavy';
+                font-size: 32px;
+                border: 3px solid #be1e2d50;
+                border-radius: 10px;
+                width: 70%;
+                padding: 2px;
+                text-align: center;
+                margin: auto;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+            /* Menu options formatting */
+            .foodtype {
+                text-align: center;
+                text-decoration-line: underline;
+                color: #d4a18d;
+                font-size: 36px;
+                padding: 30px;
+            }
+            @media screen and (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }   
+            }
+            .menurow{
+                background-color: #41393d;
+            }
+            .menucolumn {
+                float: left;
+                width: 25%;
+                margin-bottom: 24px;
+                padding: 0 78px;
+            }
+            .menucard {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0, 0.4);
+                background-color: #d4a18d;
+            }
+            .menucontainer {
+                padding: 0 32px;
+                font-size: 24px;
+                font-family: 'majesti_bannermedium';
+                text-align: center;
+                color: #41393d;
+            }
+            .menucontainer::after, .menurow::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .title {
+                font-size: 32px;
+                font-family: 'majesti_bannerbold';
+            }
+            .food {
+                width: 100%;
+                height: auto;
+            }
+            /* Copy right statement formatting */
+            .copyright {
+                text-align: center;
+                font-size: 12px;
+                color: white;
+            }
+        </style>        
+    </head>
+
+    <body>
+        <nav>
+            <!-- An unordered list that contains links to other pages on the navigation menu. -->
+            <ul class="navlinks">
+                <li><a class="home" href="contact.html">Contact</a></li>
+                <li><a class="home" href="about.html">About</a></li>
+                <li><a class="home" href="menu.html">Menu</a></li>
+                <li><a class="home" href="Index.html">Home</a></li>            
+                <li><a href="Index.html"><Img class="navlogo" src="../images/Town-logoBW.png" alt="Town logo"></a></li>
+            </ul>
+            <div class="menuimgcontainer">
+                <div>
+                   <Img class="menuimage" src="../images/Chinese-dishes.jpg" alt="Image containing several Chinese dishes"> 
+                </div>                
+            </div>
+            <div class="menuhead">
+                <!-- Menu heading -->
+                <h1> Menu </h1>
+            </div>
+        </nav>
+        <!-- Food heading - Breakfast -->
+        <div class="foodtype">
+            <h3>Breakfast</h3>
+        </div> 
+        <!-- Content cards containing food choices for customers -->
+        <div class="menurow">
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/chinese-porridge.jpg" alt="Chinese porridge">
+                    <div class="menucontainer">
+                        <h2 class="title">Chinese Porridge</h2>
+                        <p>Rice porridge with a choice of ground pork, ground turkey, fish, or eggs.
+                            Also served with a choice of vegetables such as corn, sweet potatoes, or diced carrots.</p>
+                        <p>$10.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/steamed-bun.jpg" alt="Steamed buns">                   
+                    <div class="menucontainer">
+                        <h2 class="title">Steamed Buns</h2>
+                        <p>Stuffed or unstuffed steam dumplings with pork/beef or cabbage.
+                            Other filling options include shrimp, chicken, or fish.
+                            Served with dumpling dipping sauce.</p>
+                        <p>$11.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/crepes.jpg" alt="Breakfast crepes">
+                    <div class="menucontainer">
+                        <h2 class="title">Breakfast crepes</h2>
+                        <p>Sweet crepes with the choice of banana, strawberry, or apple fillings
+                            Other stuffings include cheese and ham, chicken, or steak.
+                            Optional topping of syrup, jelly, or cream cheese.</p>
+                        <p>$9.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Food heading - Lunch -->
+        <div class="foodtype">
+            <h3>Lunch</h3>
+        </div>
+        <div class="menurow">
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/pork-noodles.jpg" alt="Pork Noodles">
+                    <div class="menucontainer">
+                        <h2 class="title">Pork Noodles</h2>
+                        <p>Fried egg noodles served with pork belly slices with a side of brocolli
+                            and soy sauce.
+                        </p>
+                        <p>$12.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/prawn-noodles.jpg" alt="Prawn Noodles">                   
+                    <div class="menucontainer">
+                        <h2 class="title">Prawn Noodles</h2>
+                        <p>Fried prawn stir-fry dish served with vegetables and a choice of protein
+                            including shrimp, pork slices, and egg.
+                        </p>
+                        <p>$13.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/crayfish-stirfry.jpg" alt="Crayfish Stirfry">
+                    <div class="menucontainer">
+                        <h2 class="title">Crayfish Stirfry</h2>
+                        <p>Spicy cray fish stiry fry served with slices of pepper.
+                            Includes a choice of soy sauce, garlic sauce, or oyster sauce.
+                        </p>
+                        <p>$10.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Food heading - Dinner -->        
+        <div class="foodtype">
+            <h3>Dinner</h3>
+        </div>
+        <div class="menurow">
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/wontons.jpg" alt="Crab Wontons">
+                    <div class="menucontainer">
+                        <h2 class="title">Crab Wontons</h2>
+                        <p>Hand folded crab wontons with a creamy crab filling, bell peppers,
+                            green onions. Served with a spicy plum sauce.
+                        </p>
+                        <p>$9.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/pork-dumplings.jpg" alt="Pork Dumplings">                   
+                    <div class="menucontainer">
+                        <h2 class="title">Pork Dumplings</h2>
+                        <p>Pan-fried or steamed handmade cabbage pork/shrimp dumplings served with
+                            a light chili sauce drizzle. 
+                        </p>
+                        <p>$11.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menucolumn">
+                <div class="menucard">
+                    <img class="food" src="../images/dumpling-soup.jpg" alt="Dumpling Soup">
+                    <div class="menucontainer">
+                        <h2 class="title">Dumpling Soup</h2>
+                        <p>Steamed dumplings served with carrots, green onions, garlic, and ground
+                            ginger sauteed in vegetable and sesame seed oil. All served within a chicken
+                            and vegetable broth.
+                        </p>
+                        <p>$9.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <!-- Contains the footer info. for each page listing the location, hours, email, as well as phone number of the restaurant. -->
+        <footer>
+            <div class="footerrow">
+                <div class="footercolumn">
+                    <img class="footerlogo" src="../images/Town-logo.png" alt="Town logo">
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Location</h3>
+                    <p>103 Mulberry St, New York, NY 10013</p> 
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Hours</h3>
+                    <p>Monday-Friday : 9:00am - 11:00pm</p>
+                    <p>Saturday : 10:00am - 9:00pm</p>
+                    <p>Sunday : 11:00am - 8:00pm</p>
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Email</h3>
+                    <p>TownCCuisine@gmail.com</p>
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Phone</h3>
+                    <p>+1 646-000-0000</p>
+                </div>            
+
+            </div>
+            <div style="color:white; text-align: center">
+                <small>&copy; 2023, Town | All Rights Reserved </small>
+            </div>
+        </footer>                
+    </body>
+</html>
