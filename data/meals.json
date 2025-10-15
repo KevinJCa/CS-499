@@ -1,0 +1,56 @@
+{
+    "breakfast" : [
+        {
+            "name" : "Chinese Porridge",
+            "image" : "chinese-porridge.jpg",
+            "description" : "Rice porridge with a choice of ground pork, ground turkey, fish, or eggs. Also served with a choice of vegetables such as corn, sweet potatoes, or diced carrots.",
+            "price": "$10.99"
+        }, {
+            "name" : "Steamed Buns",
+            "image" : "steamed-bun.jpg",
+            "description" : "Stuffed or unstuffed steam dumplings with pork/beef or cabbage. Other filling options include shrimp, chicken, or fish. Served with dumpling dipping sauce.",
+            "price": "$11.99"
+        }, {
+            "name" : "Breakfast Crepes",
+            "image" : "crepes.jpg",
+            "description" : "Sweet crepes with the choice of banana, strawberry, or apple fillings. Other stuffings include cheese and ham, chicken, or steak. Optional topping of syrup, jelly, or cream cheese.",
+            "price": "$9.99"
+        }
+    ],
+    "lunch" : [
+        {
+            "name" : "Pork Noodles",
+            "image" : "pork-noodles.jpg",
+            "description" : "Fried egg noodles served with pork belly slices with a side of brocolli and soy sauce.",
+            "price": "$12.99"
+        }, {
+            "name" : "Prawn Noodles",
+            "image" : "prawn-noodles.jpg",
+            "description" : "Fried prawn stir-fry dish served with vegetables and a choice of protein including shrimp, pork slices, and egg.",
+            "price": "$13.99"
+        }, {
+            "name" : "Crayfish Stirfry",
+            "image" : "crayfish-stirfry.jpg",
+            "description" : "Spicy cray fish stiry fry served with slices of pepper. Includes a choice of soy sauce, garlic sauce, or oyster sauce.",
+            "price": "$10.99"
+        }
+    ], 
+    "dinner" : [
+        {
+            "name" : "Crab Wontons",
+            "image" : "wontons.jpg",
+            "description" : "Hand folded crab wontons with a creamy crab filling, bell peppers, green onions. Served with a spicy plum sauce.",
+            "price": "$9.99"
+        }, {
+            "name" : "Pork Dumplings",
+            "image" : "pork-dumplings.jpg",
+            "description" : "Pan-fried or steamed handmade cabbage pork/shrimp dumplings served with a light chili sauce drizzle.",
+            "price": "$11.99"
+        }, {
+            "name" : "Dumpling Soup",
+            "image" : "dumpling-soup.jpg",
+            "description" : "Steamed dumplings served with carrots, green onions, garlic, and ground ginger sauteed in vegetable and sesame seed oil. All served within a chicken and vegetable broth.",
+            "price": "$9.99"
+        }
+    ]
+}

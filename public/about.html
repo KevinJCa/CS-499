@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- The head tag contains all the meta elements containing metadata about the page, along with links to other assets such as the style
+    sheet css, also includes the main title of the page. -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="About the restaurant">        
+        <meta name="keywords" content="Town, Chinese cuisine, variety, vision, vision statement, about us">
+        <meta name="author" content="Kevin Caballero">       
+        <meta name="viewport" content="width = device-width, initial-scale=1">        
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <title>About us</title>
+        <!-- This style section contains the design elements that are associated with the dominant image that aligns the vision statement to the right of the image. -->
+        <style>
+        /*About page image alignment with text*/
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;           
+        }
+        .imagecontainer{
+            margin-right: 8px;
+        }
+        .aboutimage{
+            margin: 24px auto;
+            width: 100%;
+            height: auto;
+            border: 4px solid #be1e2d50;
+            border-radius: 10px;
+        } 
+        .visionheader{
+            font-family: majesti_bannerbold;
+            font-size: 42px;
+            color: #d4a18d;
+        }
+        .visionstate{
+            text-align: center;
+            font-family: 'majesti_bannermedium';        
+            font-size: 24px;
+            padding: 5% 5%;
+            margin: auto;
+            color: white;
+            border-bottom: 50px solid #be1e2d50;
+            border-top: 50px solid #be1e2d50;
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <!-- An unordered list that contains links to other pages on the navigation menu. -->            
+            <ul class="navlinks">
+                <li><a class="home" href="contact.html">Contact</a></li>
+                <li><a class="home" href="about.html">About</a></li>
+                <li><a class="home" href="menu.html">Menu</a></li>
+                <li><a class="home" href="Index.html">Home</a></li>            
+                <li><a href="Index.html"><Img class="navlogo" src="images/Town-logoBW.png" alt="Town logo"></a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="imagecontainer">
+                <!-- Dominant about-us image -->
+                <Img class="aboutimage" src="images/plates.jpg" alt="Individual with chopsticks reaching for chinese food on a platter">
+            </div>      
+            <div class="visionstate">
+                <!-- Vision statement header -->
+                <h1 class="visionheader">Vision</h1>
+                <!-- Vision Statement paragraphs -->
+                <p>TOWN combines a variety of chinese cuisine
+                    to excite and delight our customers.</p>
+                <p>Our vision for the future is to create
+                    experiential dining that is more than just
+                    a night out. We aim to bring quality and
+                    luxury across all aspects of our brand.</p>
+                <p>The approach of TOWN is to develop our
+                    brand with the understanding of both our
+                    culture and consumer insights. Within our
+                    vision always lives the promise of inspiring
+                    creativity, conversation and quality. </p>
+                <p>Our audience is a high-end clientele who
+                    values a dining experience. The age range
+                    of our customers are from early 30s-60s.
+                    We would like them to come back for both
+                    personal dining and events.</p>
+            </div>
+        </div>
+        <!-- Contains the footer info. for each page listing the location, hours, email, as well as phone number of the restaurant. -->
+        <footer>
+            <div class="footerrow">
+                <div class="footercolumn">
+                    <img class="footerlogo" src="images/Town-logo.png" alt="Town logo">
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Location</h3>
+                    <p>103 Mulberry St, New York, NY 10013</p> 
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Hours</h3>
+                    <p>Monday-Friday : 9:00am - 11:00pm</p>
+                    <p>Saturday : 10:00am - 9:00pm</p>
+                    <p>Sunday : 11:00am - 8:00pm</p>
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Email</h3>
+                    <p>TownCCuisine@gmail.com</p>
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Phone</h3>
+                    <p>+1 646-000-0000</p>
+                </div>
+            </div>
+            <div style="color:white; text-align: center">
+                <small>&copy; 2023, Town | All Rights Reserved </small>
+            </div>
+        </footer>        
+    </body>
+</html>
