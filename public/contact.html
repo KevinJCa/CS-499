@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- The head tag contains all the meta elements containing metadata about the page, along with links to other assets such as the style
+        sheet css, also includes the main title of the page. -->
+        <meta charset="utf-8">
+        <meta name="description" content="Contains contact information about the restaurant.">        
+        <meta name="keywords" content="Town, contact us, contact info, contact form, location, email, phone, hours">
+        <meta name="author" content="Kevin Caballero">       
+        <meta name="viewport" content="width = device-width, initial-scale=1">        
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <title>Contact us</title>
+        <style>
+            /* Contact page heading */
+            .contacthead { 
+                background-color: rgba(0,0,0, 0.5);
+                color: #d4a18d;
+                font-family: 'majesti_bannerheavy';
+                border: 5px solid #8a8c8f;
+                border-radius: 10px;
+                width: 80%;
+                padding: 18px;
+                text-align: center;
+                margin: auto;
+                margin-top: 24px;
+                margin-bottom: 64px;
+            }
+            /* Contact-us form layout */
+            form {
+                background-color: rgba(0,0,0, 0.5);
+                border: 5px solid #8a8c8f;
+                border-radius: 10px;
+                width: 720px;
+                margin: 50px auto;
+                max-width: 96%;
+                padding: 30px 30px;
+            }
+            form label {
+                display: block;
+                letter-spacing: 2.5px;
+                margin-top: 12px;
+                margin-bottom: 12px;
+                font-family: 'majesti_bannermedium';
+                font-size: 18px;
+                color: #d4a18d
+            }
+            form .align {
+                text-align: center;
+            }        
+            form .names {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 20px;
+            }
+            form .names .info { 
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 28px;
+                width: 50%;
+            }        
+            form input[type=text], input[type=email], input[type=number] {
+                border-radius: 4px;
+                border: 1px solid black;
+                outline: 0;
+                padding: 8px;
+                width: 96%;
+                height: auto;
+                background-color: #8a8c8f;
+                font-size: 24px;
+                font-family: 'majesti_bannermedium';
+                color: white;
+            }
+            form .summaryinfo {
+                margin-bottom: 24px;           
+            }
+            form .summaryinfo textarea {
+                background-color: #8a8c8f;
+                border-radius: 4px;
+                border: 1px solid black;
+                outline: 0;
+                padding: 12px 16px;
+                width: 94%;
+                height: 200px;
+                font-size: 24px;
+                color: white;
+            }
+            form input[type=submit] {
+                display: block;
+                border-radius: 4px;
+                border: none;
+                outline: 0;
+                padding: 12px;
+                background-color: #8a8c8f;
+                color: black;
+                font-size: 18px;
+                font-family: 'majesti_bannermedium';
+                margin: auto;
+            }
+            form input[type=submit]:hover {
+                background-color: white;
+                transition: .5s;
+                cursor: pointer;
+            }
+            /* Social handles icon format */
+            .followheader {
+                font-size: 24px;
+                font-family: 'majesti_bannerbold';
+                color: #d4a18d;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .iconlist {
+                display: inline-block;
+                list-style: none;
+                margin: auto;            
+                font-size: 64px;
+                padding: 0px 60px;
+            }       
+            a {
+                color: #d4a18d;
+            }
+            a:hover {
+                color: white;
+                transition: .5s;
+            }
+            .socialmedia {
+                margin: auto 40px 40px auto;
+                display: flex;
+                justify-content: center;
+            }
+        </style>        
+    </head>
+    <body>
+        <nav>
+            <!-- An unordered list that contains links to other pages on the navigation menu. -->
+            <ul class="navlinks">
+                <li><a class="home" href="contact.html">Contact</a></li>
+                <li><a class="home" href="about.html">About</a></li>
+                <li><a class="home" href="menu.html">Menu</a></li>
+                <li><a class="home" href="Index.html">Home</a></li>            
+                <li><a href="Index.html"><Img class="navlogo" src="images/Town-logoBW.png" alt="Town logo"></a></li>
+            </ul>
+        </nav>
+        <div class="contacthead">
+            <!-- Contact-us header -->
+            <h1>Contact us</h1>
+        </div>
+        <form>
+            <!-- Form section for the user to input their contact information with any additional details. -->
+            <div class="names">
+                <div class="align">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname">
+                </div>
+                <div class="align">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">                     
+                </div>
+            </div>                
+            <div class="info">
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">                    
+                </div>               
+            </div>
+            <div class="summaryinfo">
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject">
+                </div>
+                <div>
+                    <label for="summary">Summary</label>
+                    <textarea name="summarytext" id="summary"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+            <div class="followheader">
+                <h3>Follow us</h3>
+            </div>
+            <!-- Contains clickable social media icons that directs the user to the restaurant's social media pages. -->
+            <div class="icons">
+                <div class="socialmedia">
+                    <ul>
+                        <li class="iconlist"> <a href="https://twitter.com" target="_blank" rel="noreferrer noopener"> <ion-icon name="logo-twitter"></ion-icon> </a> </li>
+                        <li class="iconlist"> <a href="https://facebook.com" target="_blank" rel="noreferrer noopener"> <ion-icon name="logo-facebook"></ion-icon> </a> </li>                  
+                        <li class="iconlist"> <a href="https://instagram.com" target="_blank" rel="noreferrer noopener"> <ion-icon name="logo-instagram"></ion-icon> </a> </li>                   
+                    </ul>                
+                </div>
+            </div>            
+        </form>
+        <!-- Contains the footer info. for each page listing the location, hours, email, as well as phone number of the restaurant. -->
+        <footer>
+            <div class="footerrow">
+                <div class="footercolumn">
+                    <img class="footerlogo" src="images/Town-logo.png" alt="Town logo">
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Location</h3>
+                    <p>103 Mulberry St, New York, NY 10013</p> 
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Hours</h3>
+                    <p>Monday-Friday : 9:00am - 11:00pm</p>
+                    <p>Saturday : 10:00am - 9:00pm</p>
+                    <p>Sunday : 11:00am - 8:00pm</p>
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Email</h3>
+                    <p>TownCCuisine@gmail.com</p>
+                </div>
+                <div class="footercolumn"> 
+                    <h3>Phone</h3>
+                    <p>+1 646-000-0000</p>
+                </div>
+            </div>
+                <div style="color:white; text-align: center">
+                    <small>&copy; 2023, Town | All Rights Reserved </small>
+                </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+/*Fonts*/
+@font-face {
+  font-family: 'majesti_bannerbold';
+  src: url('fonts/majesti-banner-bold-webfont.woff2') format('woff2'),
+       url('fonts/majesti-banner-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'majesti_bannerheavy';
+  src: url('fonts/majesti-banner-heavy-webfont.woff2') format('woff2'),
+       url('fonts/majesti-banner-heavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'majesti_bannermedium';
+  src: url('fonts/majesti-banner-medium-webfont.woff2') format('woff2'),
+       url('fonts/majesti-banner-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*Primary body design for each page*/
+body {
+  margin: 0px;
+  background-color: #41393d;
+}
+/*Navigational menu*/
+.navlinks {
+  list-style-type:none;
+  overflow: hidden;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+li .home {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'majesti_bannerheavy';
+  padding: 1.5rem 12rem;
+  text-decoration: none;
+  float: right;
+}
+li .home:hover {
+  background-color: #8a8c8f;
+}
+/*image dimensions*/
+.navlogo {
+  width: 15%;
+  height: 15%;
+}
+/*Footer styling*/
+@media screen and (max-width: 600px) {
+  .footercolumn {
+          width: 100%;
+      }
+  }
+  .footercolumn {
+      float: left;
+      width : 20%;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      font-family: 'majesti_bannermedium';
+  }
+  .footercolumn h3 {
+      color: #d4a18d;
+      font-family: 'majesti_bannerbold';
+  }
+  .footerrow:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  footer {
+      background-color: rgba(0,0,0, 0.5);
+  }
+  .footerlogo {
+      width: 80%;
+      height: auto;
+      position: relative;
+      margin: 60px auto;
+  }
